@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans&display=swap');
+
+$blue_dark: #060A24;
+$button_color: #00F3BB 100%;
+$blue_menu: #0000EC;
+$white: #FFFFFF;
+$background_svg: linear-gradient(220deg, #0000FF, #0000A3);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: $blue_dark;
+}
+
+body {
+    margin: 0 6.7%;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+p {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+section>.title {
+    color: $white;
+}
+
+.second_paragraph {
+    display: none;
+}
+
+.title {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/*bottones*/
+.button {
+    text-align: center;
+    background-color: #00F3BB;
+    border: none;
+    padding: 14px 57px;
+    width: 15%;
+
+    &:hover {
+        color: $white;
+        background-image: linear-gradient(to right, #00F0B8, #0000FE);
+    }
+
+    a {
+        font-size: 1.1em;
+        font-family: 'IBM Plex Mono', monospace;
+
+    }
+}
+
+#queres {
+    width: 20%;
+    align-self: center;
+}
+
+
+/*imagenes*/
+
+.phone {
+    width: 400px;
+    position: relative;
+    margin: -8em 0 0 13vw;
+}
+
+
+/*header*/
+#btn-menu {
+    display: none;
+}
+
+header label {
+    color: $blue_dark;
+    display: none;
+}
+
+.menu ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.menu a {
+    padding: 15px 20px;
+    display: block;
+    text-decoration: none;
+}
+
+span {
+    color: $blue_menu;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*episodios*/
+#episodios {
+    background-image: $background_svg;
+    clip-path: polygon(0 13%, 100% 0, 100% 87%, 0 100%);
+    margin: 0 -7.7%;
+    height: 50em;
+}
+
+/*topicos*/
+
+.topic_text {
+    font-size: 1.45em;
+    font-weight: 600;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.conteiner_topicos {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 0 6vw;
+
+    li {
+        width: 11em;
+        flex-grow: 1;
+        padding: 4vh 1vw;
+    }
+
+    img {
+        margin-bottom: 0.7em;
+    }
+}
+
+.donde_venimos {
+    margin-left: 7.3%;
+}
+
+@media screen and (max-width: 1200px) {
+    .somos {
+        flex-flow: row wrap;
+    }
+
+    .menu {
+        ul {
+            font-size: 0.9em;
+        }
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .main_conteiner {
+        padding: 9% 0 3% 0;
+
+        p {
+            width: 70%;
+        }
+    }
+
+    h2 {
+        padding: 1em 7.3%;
+    }
+
+    main {
+        margin-left: 7.3%;
+    }
+
+    p {
+        line-height: 1.5em;
+    }
+
+    .menu a {
+        &:hover {
+            text-decoration: line-through;
+            color: #00F3BB;
+        }
+    }
+
+    .topic_text {
+        font-size: 1.4em;
+    }
+
+    /*episodios*/
+    .conteiner_iframe {
+        margin: 0 6.7%;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+
+    iframe {
+        border-style: hidden;
+        border-radius: 3%;
+        width: 47%;
+        height: 232px;
+        padding-bottom: 5%;
+    }
+
+    #episodios {
+        padding-top: 10em;
+
+        h2 {
+            padding: 0 0 2% 14%;
+        }
+    }
+
+    /*entrevistas images*/
+    .entrevistas_conteiner {
+        width: 100vw;
+        margin: 0 -7.7%;
+    }
+
+    .entrevistas_images {
+        display: flex;
+        flex-flow: row wrap;
+
+        img {
+            width: 33.3vw;
+        }
+    }
+
+    #entrevistas {
+        li {
+            margin: -4px 0;
+        }
+    }
+
+    /*novedades*/
+    .novedades {
+        background: $background_svg;
+        clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+        margin: 0 -7.7%;
+        height: 30em;
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        justify-content: center;
+
+        h2 {
+            padding: inherit;
+        }
+
+        a {
+            align-self: center;
+        }
+    }
+
+    /*social media*/
+    footer {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        height: 5em;
+    }
+
+    .social_media {
+        display: flex;
+
+        a {
+            padding: 0 0 0 2.3em;
+        }
+    }
+
+    .somos {
+        display: flex;
+
+        h2 {
+            padding-left: inherit;
+        }
+
+        p {
+            width: 90%;
+        }
+    }
+
+    .button {
+        margin-top: 1.5em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        margin: 0 5%;
+    }
+
+    h1 {
+        margin: 9% 0 5% 0;
+    }
+
+    .title {
+        font-size: 2.137em;
+        width: 84%;
+    }
+
+    h2 {
+        padding: 1.2em 0 4%;
+    }
+
+    p {
+        line-height: 1.5em;
+        font-size: 0.875em;
+    }
+
+    .second_paragraph {
+        display: inherit;
+    }
+
+    .first_paragraph {
+        display: none;
+    }
+
+    span {
+        color: $blue_dark;
+    }
+
+    .donde_venimos {
+        margin-left: inherit;
+    }
+
+
+    /*episodios*/
+
+    #episodios {
+        clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+        margin: 16% -5% 0 -5%;
+        height: 80em;
+
+        .title {
+            margin: 8% 0 2% 5%;
+            padding-top: 1.8em;
+        }
+    }
+
+    /*entrevistas*/
+
+    #entrevistas li {
+        margin: -4px 0;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .entrevistas_images {
+        margin: 0 -5%;
+    }
+
+    /*iframe*/
+
+    .conteiner_iframe {
+        display: grid;
+        grid-template-columns: 3.5% auto 3.5%;
+    }
+
+    iframe {
+        border-style: hidden;
+        border-radius: 3%;
+        grid-column: 2 / 3;
+        width: 100%;
+        border-radius: 5%;
+    }
+
+    /*novedades*/
+
+    .novedades {
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        background: $background_svg;
+        margin: 0 -5%;
+        padding-bottom: 3em;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+    }
+
+    /*images*/
+    .phone_conteiner {
+        width: 100%;
+        position: relative;
+
+    }
+
+    .phone {
+        width: 100%;
+        margin: -35% auto 0;
+    }
+
+    /*Header*/
+    header label {
+        display: block;
+    }
+
+    header {
+        height: 44px;
+    }
+
+    .menu {
+        position: absolute;
+        background: $blue_menu;
+        width: 100%;
+        transition: all 0.5s;
+        margin: -100% 0 0 -90%;
+
+        ul {
+            flex-direction: column;
+        }
+
+        a {
+            color: $white;
+        }
+    }
+
+    #btn-menu:checked~.menu {
+        margin: 4% -92%;
+    }
+
+    #btn-menu:checked~label #icon1 {
+        display: none;
+    }
+
+    #icon2 {
+        display: none;
+    }
+
+    #btn-menu:checked~label #icon2 {
+        display: inherit;
+    }
+
+    /*botones*/
+
+    .button {
+        margin-top: 13%;
+        font-size: 0.95em;
+        width: inherit;
+    }
+
+    #queres {
+        padding: 1em 2.55em;
+        width: inherit;
+    }
+
+    /*footer*/
+    footer {
+        text-align: center;
+        height: 24vh;
+
+        p {
+            padding: 1.5em 0 2em;
+        }
+    }
+
+    .social_media {
+        display: flex;
+        justify-content: space-around;
+    }
+}

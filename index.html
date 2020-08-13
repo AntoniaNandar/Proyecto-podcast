@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/7899fc8d6e.js" crossorigin="anonymous"></script>
+    <title>Podcast</title>
+</head>
+
+<body>
+    <header>
+        <div><img src="/images/logo.svg" alt="logo"></div>
+        <div>
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu"><span class="fas fa-bars" id="icon1"></span><span class="fas fa-times fa-lg" id="icon2"></span></label>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="#episodios">EPISODIOS</a></li>
+                    <li><a href="#nosotros">NOSOTROS</a></li>
+                    <li><a href="#entrevistas">ENTREVISTAS</a></li>
+                    <li><a href="#topicos">TÓPICOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="nosotros">
+        <div class="main_conteiner">
+            <h1 class="title"> Hello <del>world</del> pale blue dot <span>.</span></h1>
+            <p class="first_paragraph">El portal de podcasts que explora el mundo de la programación y la tecnología.
+                Nuevos episodios, todos los jueves cada 15 días.</p>
+            <p class="second_paragraph">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los
+                jueves cada 15 días.</p>
+        </div>
+        <div class="button" id="conoce">
+            <a href="#topicos">CONOCÉ MÁS</a>
+        </div>
+    </main>
+
+    <section id="episodios" class="episodios">
+        <h2 class="title">Episodios</h2>
+        <div class="conteiner_iframe">
+            <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" allowfullscreen
+                height="250"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" allowfullscreen
+                height="250"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" allowfullscreen
+                height="250"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" allowfullscreen
+                height="250"></iframe>
+        </div>
+    </section>
+
+    <section>
+        <article class="somos">
+            <div class="phone_conteiner"><img src="/images/phone.png" alt="phone" class="phone"></div>
+            <div class="donde_venimos">
+                <h2 class="title">De dónde venimos</h2>
+                <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in
+                    the Universe, are challenged by this point of pale light. <br>
+                    Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
+                    vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+            </div>
+        </article>
+
+        <article id="entrevistas">
+            <h2 class="title">Invitadas/os estelares</h2>
+            <div class="entrevistas_conteiner">
+                <ul class="entrevistas_images">
+                    <li><img src="/images/grace-hopper.png" alt="grace-hopper"></li>
+                    <li><img src="/images/Katie-Bouman.png" alt="katie-bouman"></li>
+                    <li><img src="/images/Margaret_Hamilton.png" alt="margaret_hamilton"></li>
+                    <li><img src="/images/An_E.R.A.Univac_1103_computer_in_the_1950s.png"
+                            alt="e.r.a.univac_1103_computer"></li>
+                    <li><img src="/images/Computer_operators_with_an_Eniac_—_the_world’s_first_programmable_general-purpose_computer.png"
+                            alt="computer_operators"></li>
+                    <li><img src="/images/susan-kare.png" alt="susan-kare"></li>
+                </ul>
+            </div>
+        </article>
+
+        <article id="topicos">
+            <h2 class="title">Algunos de nuestros temas</h2>
+            <ul class="conteiner_topicos">
+                <li><img src="/images/icon1.svg" alt="icon1">
+                    <p class="topic_text">Trabajo remoto</p>
+                </li>
+                <li><img src="/images/icon2.svg" alt="icon2">
+                    <p class="topic_text">Repensando la programación</p>
+                </li>
+                <li><img src="/images/icon3.svg" alt="icon3">
+                    <p class="topic_text">Bases del código</p>
+                </li>
+                <li><img src="/images/icon4.svg" alt="icon4">
+                    <p class="topic_text">Seguridad informática</p>
+                </li>
+            </ul>
+        </article>
+    </section>
+
+    <section class="novedades">
+        <h2 class="title">¿Querés las últimas novedades?</h2>
+        <div class="button" id="queres">
+            <a href="#episodios">ESCUCHÁ LOS EPISODIOS</a>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2019— Hello blue pale dot</p>
+        <div class="footer_conteiner">
+            <ul class="social_media">
+                <li><a href="#nosotros" target="blanck" title="Spotify"><i class="fab fa-spotify"></i></a></li>
+                <li><a href="#nosotros" target="blanck" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#nosotros" target="blanck" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#nosotros" target="blanck" title="facebook"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#nosotros" target="blanck" title="telegram"><i class="fab fa-telegram-plane"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
