@@ -84,6 +84,7 @@ ul {
 header label {
   color: #060A24;
   display: none;
+  cursor: pointer;
 }
 
 .menu ul {
@@ -231,7 +232,7 @@ header {
   }
   /*entrevistas images*/
   .entrevistas_conteiner {
-    width: 100vw;
+    width: 115.4%;
     margin: 0 -7.7%;
   }
   .entrevistas_images {
@@ -242,9 +243,12 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .entrevistas_images img {
-    width: 33.3vw;
+    width: 32.8vw;
   }
   #entrevistas li {
     margin: -4px 0;

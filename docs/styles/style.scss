@@ -92,6 +92,7 @@ ul {
 header label {
     color: $blue_dark;
     display: none;
+    cursor: pointer;
 }
 
 .menu ul {
@@ -103,6 +104,7 @@ header label {
     padding: 15px 20px;
     display: block;
     text-decoration: none;
+
     &:active {
         color: #060A24 56%;
         text-decoration: line-through;
@@ -228,16 +230,17 @@ header {
 
     /*entrevistas images*/
     .entrevistas_conteiner {
-        width: 100vw;
+        width: 115.4%;
         margin: 0 -7.7%;
     }
 
     .entrevistas_images {
         display: flex;
         flex-flow: row wrap;
+        justify-content: center;
 
         img {
-            width: 33.3vw;
+            width: 32.8vw;
         }
     }
 
