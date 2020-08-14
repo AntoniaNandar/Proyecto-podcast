@@ -73,7 +73,7 @@ ul {
 .phone {
   width: 400px;
   position: relative;
-  margin: -8em 0 0 13vw;
+  margin: -8em 0 0 10vw;
 }
 
 /*header*/
@@ -412,7 +412,7 @@ header {
   }
   .phone {
     width: 100%;
-    margin: -35% auto 0;
+    margin: -30% auto 0;
   }
   /*Header*/
   header label {
