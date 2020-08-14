@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans&display=swap');
 
 $blue_dark: #060A24;
-$button_color: #00F3BB 100%;
+$button_color: #00F3BB;
 $blue_menu: #0000EC;
 $white: #FFFFFF;
 $background_svg: linear-gradient(220deg, #0000FF, #0000A3);
@@ -104,11 +104,6 @@ header label {
     padding: 15px 20px;
     display: block;
     text-decoration: none;
-
-    &:active {
-        color: #060A24 56%;
-        text-decoration: line-through;
-    }
 }
 
 span {
@@ -197,6 +192,11 @@ header {
         &:hover {
             text-decoration: line-through;
             color: #00F3BB;
+        }
+
+        &:active {
+            color: rgba(6, 10, 36, .56);
+            text-decoration: line-through;
         }
     }
 
